@@ -1,15 +1,57 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href = "js/jquery-3.1.1.js">
-    <link href="js/scripts.js">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src= "js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Product receipt</title>
   </head>
   <body>
     <div class="container">
+      <h1>Thanks for Shopping with JSusha's Botanicals</h1>
+      <h3>Please provide the following information so we can complete your order!</h3>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="name">First & Last Name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="streetAddress">Street Address or P.O. Box</label>
+            <input id="streetAddress" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="cityState">City, State</label>
+            <input id="cityState" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="zip">Zip Code</label>
+            <input id="zip" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="phoneNumber">Primary Phone Number</label>
+            <input id="phoneNumber" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn">Confirm Your Order</button>
+        </form>
+      </div>
 
+      <div id="receipt">
+      <h2>Your Order Confirmation</h2>
+      <p>Thank you for ordering with us <span class="name"></span>!</p>
+      <p>We will be sending your botanical order to the following address:</p>
+        <ul>
+          <li><span class="name"></span></li>
+          <li><span class="streetAddress"></span></li>
+          <li><span class="cityState"></span> <span class="zip"></span></li>
+        </ul>
+      <p>We have your phone number, <span class="phoneNumber"></span>, on file and we will be sending an order confirmation number to your email at <span class="email"></span>.  Enjoy your botanical products!</p>
+      </div>
     </div>
   </body>
 </html>
